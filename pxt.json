@@ -8,12 +8,14 @@
         "EPXDisplay": "github:microsoft/ExpressivePixelsMakeCode#v1.3.5",
         "ws2812b": "github:microsoft/pxt-ws2812b#v0.1.1",
         "pxt-max7219_8x8": "github:alankrantas/pxt-max7219_8x8#v0.0.3",
-        "pxt-kitronik-zip-tile": "github:kitronikltd/pxt-kitronik-zip-tile#v0.1.0"
+        "pxt-kitronik-zip-tile": "github:kitronikltd/pxt-kitronik-zip-tile#v0.1.0",
+        "pxt-proportional-font": "github:lwchkg/pxt-proportional-font#v1.0.2"
     },
     "files": [
         "main.blocks",
         "main.ts",
-        "README.md"
+        "README.md",
+        "main.py"
     ],
     "testFiles": [
         "test.ts"
@@ -22,12 +24,23 @@
         "branch": "v4.0.16",
         "tag": "v4.0.16",
         "commits": "https://github.com/microsoft/pxt-microbit/commits/04b1a5492fb75af626caed5601ee8d794d970dd7",
-        "target": "4.0.18",
+        "target": "4.1.14",
         "pxt": "7.0.12",
         "targetId": "microbit"
     },
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "blocksprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 1,
+                    "whitelist": 0,
+                    "security_level": null
+                }
+            }
+        }
+    }
 }
